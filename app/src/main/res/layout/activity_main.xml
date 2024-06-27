@@ -14,20 +14,36 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/backgroundforex2"
-            android:scaleType="centerCrop">
-        </ImageView>
+            android:scaleType="centerCrop"
+            android:contentDescription="Wallpaper"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"/>
+
+
+            <TextView
+                android:id="@+id/timestampTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Tanggal dan Waktu"
+                android:textColor="#ffffff"/>
+        
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/recyclerView1"
             android:padding="10dp">
         </androidx.recyclerview.widget.RecyclerView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Forex 2"
-            android:layout_gravity="center|right"
-            android:rotation="98"
+            android:layout_gravity="center|end"
+            android:rotation="90"
             android:textColor="#cccccc"
             android:textSize="50sp">
         </TextView>
